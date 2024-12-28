@@ -182,7 +182,7 @@ if (r3 == 1 ){
   //let voice = await getBuffer(voice_reply) ; 
  // A17.sendMessage(from , {audio: voice , mimetype: 'audio/mpeg'} , {quoted: m})
 
-	await lol.replyWithAudio({url: voice_url}) ; 
+	await lol.replyWithAudio({url: voice_reply}) ; 
 }
 
 else {
