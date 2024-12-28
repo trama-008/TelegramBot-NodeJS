@@ -149,7 +149,7 @@ bot.on('message', async (lol) => {
 		}
 		var mediaLink = file_id != '' ? await tele.getLink(file_id) : ''
 
-
+/*
 if (!isCmd)
  
  {
@@ -163,7 +163,44 @@ if (!isCmd)
 	
      }
 
-		
+		*/
+if (!isCmd && isQuoted){
+	
+		 try {
+    
+
+    
+    const apiR = await fetchJson(`https://tachibanaa710-cai.hf.space/send_message?message=${encodeURIComponent(budy)}&character_id=IobeFpxVcqnebA2BEGHCYBSYWW78PDQ1ph33MAbQ-R0&chat_id=244a0a4e-cd30-4f6d-bbc7-6db18cb46811&voice_id=b53d376b-b7b8-4657-b4ca-abb5a5455b3c&voice=true`) ; 
+
+let text_reply = apiR.response ;
+let voice_reply = apiR.voice_url ; 
+
+const r3x = [1 ,2 ,3 ]
+			 let r3 = r3x[Math.floor(Math.random() * r3x.length)] ; 
+if (r3 == 1 ){
+  //let voice = await getBuffer(voice_reply) ; 
+ // A17.sendMessage(from , {audio: voice , mimetype: 'audio/mpeg'} , {quoted: m})
+
+	await lol.replyWithAudio({url: voice_url}) ; 
+}
+
+else {
+  await reply (text_reply) ; 
+}
+
+  }
+  
+  catch (error){
+    console.error(error) ;
+    return reply ('خطأ في السيرفر ، الرجاء تبليغ المطور عبر الأمر: \n \n -بلاغ')
+    
+  } 
+  
+}
+
+
+
+	
 		switch (command) {
 
 			case 'cai' :
