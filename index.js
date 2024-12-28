@@ -171,7 +171,8 @@ if (!isCmd && isQuoted){
 
     const budy = args.join(" ") ; 
 			 
-    const apiR = await fetchJson(`https://tachibanaa710-cai.hf.space/send_message?message=${encodeURIComponent(budy)}&character_id=IobeFpxVcqnebA2BEGHCYBSYWW78PDQ1ph33MAbQ-R0&chat_id=244a0a4e-cd30-4f6d-bbc7-6db18cb46811&voice_id=b53d376b-b7b8-4657-b4ca-abb5a5455b3c&voice=true`) ; 
+    const apiR = await fetchJson(`https://tachibanaa710-cai.hf.space/send_message?message=${encodeURIComponent(budy)}&character_id=smtV3Vyez6ODkwS8BErmBAdgGNj-1XWU73wIFVOY1hQ&chat_id=25bc4657-09e6-4310-a747-6bd222c5d128&voice_id=b53d376b-b7b8-4657-b4ca-abb5a5455b3c%26voice&voice=true
+`) ; 
 
 let text_reply = apiR.response ;
 let voice_reply = apiR.voice_url ; 
