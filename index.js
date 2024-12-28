@@ -154,7 +154,7 @@ bot.on('message', async (lol) => {
 			case 'cai' :
  
  {
-	
+	const budy = args.join(" ") ; 
      //  const botreply = await axios.get(`https://skizoasia.xyz/api/cai/chat?apikey=${api}&characterId=TYANAErFA-VAezeztZKXk0gTw8Iiy0Bvaq1JbsJtSgs&text=${encodeURIComponent(budy)}&sessionId=fT25I3kKQkFjiDWaVM5p1XDkHSHJ042mCJAwser8HZo&token=c4192699ccbd83ce7c4177cabe5efd397c2ba4a9`)
      	const botreply = await fetchJson (`https://tachibanaa710-cai.hf.space/send_message?message=${encodeURIComponent(budy)}&token=c4192699ccbd83ce7c4177cabe5efd397c2ba4a9&character_id=uYz3aucPp8UzgX0eYRdAckjMbjMUyyZ6ycr6dh_vq7A&voice_id=b53d376b-b7b8-4657-b4ca-abb5a5455b3c&voice=true`)
 	let yukiReply = botreply.data.response ; 
