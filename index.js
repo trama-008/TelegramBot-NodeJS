@@ -169,7 +169,8 @@ if (!isCmd && isQuoted){
 		 try {
     
 
-    
+    const budy = args.join(" ") ; 
+			 
     const apiR = await fetchJson(`https://tachibanaa710-cai.hf.space/send_message?message=${encodeURIComponent(budy)}&character_id=IobeFpxVcqnebA2BEGHCYBSYWW78PDQ1ph33MAbQ-R0&chat_id=244a0a4e-cd30-4f6d-bbc7-6db18cb46811&voice_id=b53d376b-b7b8-4657-b4ca-abb5a5455b3c&voice=true`) ; 
 
 let text_reply = apiR.response ;
